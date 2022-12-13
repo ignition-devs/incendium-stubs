@@ -3,11 +3,11 @@ ci:
 
 repos:
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 22.12.0
     hooks:
       - id: black
   - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
+    rev: 5.11.1
     hooks:
       - id: isort
   - repo: https://github.com/PyCQA/flake8
@@ -19,6 +19,6 @@ repos:
         additional_dependencies:
           - flake8-pyi
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v2.37.1
+    rev: v2.38.0
     hooks:
       - id: commitizen
