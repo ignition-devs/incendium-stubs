@@ -25,7 +25,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ env.pythonLocation }}
-          key: py${{ env.PYTHON_VERSION }}-hashFiles('setup.cfg')
+          key: py${{ env.PYTHON_VERSION }}-${{ hashFiles('setup.cfg') }}
           restore-keys: |
             py${{ env.PYTHON_VERSION }}-
 

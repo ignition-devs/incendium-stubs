@@ -30,7 +30,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ env.pythonLocation }}
-          key: py${{ matrix.python-version }}-hashFiles('tox.ini')
+          key: py${{ matrix.python-version }}-${{ hashFiles('tox.ini')  }}
           restore-keys: |
             py${{ matrix.python-version }}-
 
