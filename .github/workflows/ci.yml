@@ -18,7 +18,8 @@ jobs:
         python-version: ["3.6", "3.7", "3.8", "3.9", "3.10"]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
@@ -30,22 +31,22 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ env.pythonLocation }}
-          key: py${{ matrix.python-version }}-${{ hashFiles('tox.ini')  }}
+          key: py${{ matrix.python-version }}-${{ hashFiles('tox.ini', 'requirements/ci.txt')  }}
           restore-keys: |
             py${{ matrix.python-version }}-
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install tox
+          python -m pip install --requirement requirements/ci.txt
 
       - name: Pick environment to run
         run: |
           import codecs; import os; import sys
-          env = "TOXENV=py{}{}\n".format(*sys.version_info[0:2])
-          print("Picked:\n{}for{}".format(env, sys.version))
+          env = "TOXENV=py{}{}\n".format(*sys.version_info[:2])
+          print(f"Picked:\n{env}for {sys.version}")
           with codecs.open(os.environ["GITHUB_ENV"], "a", "utf-8") as file_handler:
-                file_handler.write(env)
+              file_handler.write(env)
         shell: python
 
       - name: Cache tox
