@@ -11,7 +11,7 @@ This package contains a collection of [stubs](https://www.python.org/dev/peps/pe
 
 ## Installation and usage
 
-To use `incendium-stubs`, you may install it with `pip`. It requires Python 3.6 through 3.10.
+To use `incendium-stubs`, you may install it with `pip`. It requires Python 3.7 through 3.10.
 
 ```sh
 python -m pip install incendium-stubs
