@@ -1,0 +1,14 @@
+name: publish
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  publish:
+    uses: thecesrom/workflows/.github/workflows/pypi-upload.yml@v0.0.3
+    with:
+      image: ubuntu-22.04
+      python-version: "3.10"
+      pypi-token: ${{ secrets.PYPI_API_TOKEN }}

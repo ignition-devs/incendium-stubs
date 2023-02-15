@@ -1,0 +1,14 @@
+name: main
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    uses: thecesrom/workflows/.github/workflows/tox-gh.yml@v0.0.3
+    with:
+      python-versions: '["3.7", "3.8", "3.9", "3.10"]'
