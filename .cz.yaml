@@ -1,2 +1,5 @@
+---
 commitizen:
   name: cz_conventional_commits
+  tag_format: v$version
+  version: 2023.1.0
