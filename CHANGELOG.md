@@ -1,3 +1,11 @@
+## v2023.2.0 (2023-02-25)
+
+### Feat
+
+- **vision**: add authentication and authorization (#35)
+
+## v2023.1.0.post1 (2023-02-02)
+
 ## v2023.1.0 (2023-02-14)
 
 ## v2023.1.0.post1 (2023-02-02)
