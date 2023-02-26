@@ -5,7 +5,7 @@ requires = [
 ]
 
 [project]
-name = "incendium_stubs"
+name = "incendium-stubs"
 version = "2023.2.0"
 description = "incendium stubs package"
 readme = "README.md"
@@ -45,7 +45,6 @@ Funding = "https://github.com/sponsors/thecesrom"
 Homepage = "https://thecesrom.dev/incendium-stubs"
 Source = "https://github.com/thecesrom/incendium-stubs"
 Tracker = "https://github.com/thecesrom/incendium-stubs/issues"
-
 
 [tool.setuptools]
 include-package-data = true
