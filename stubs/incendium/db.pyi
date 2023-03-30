@@ -8,6 +8,8 @@ class DisposableConnection:
     database: AnyStr
     retries: int
     def __init__(self, database: AnyStr, retries: int = ...) -> None: ...
+    @property
+    def status(self) -> AnyStr: ...
     def __enter__(self) -> DisposableConnection: ...
     def __exit__(
         self,
@@ -15,8 +17,6 @@ class DisposableConnection:
         exc_val: Optional[BaseException],
         exc_tb: Optional[TracebackType],
     ) -> None: ...
-    @property
-    def status(self) -> AnyStr: ...
 
 class Param:
     def __init__(
@@ -40,6 +40,13 @@ class InParam(Param):
 class OutParam(Param):
     def __init__(self, name_or_index: Union[int, AnyStr], type_code: int) -> None: ...
 
+def get_output_params(
+    stored_procedure: AnyStr,
+    output: List[OutParam],
+    database: AnyStr = ...,
+    transaction: Optional[AnyStr] = ...,
+    params: Optional[List[InParam]] = ...,
+) -> DictIntStringAny: ...
 def check(
     stored_procedure: AnyStr,
     database: AnyStr = ...,
@@ -56,13 +63,6 @@ def get_data(
     database: AnyStr = ...,
     params: Optional[List[InParam]] = ...,
 ) -> BasicDataset: ...
-def get_output_params(
-    stored_procedure: AnyStr,
-    output: List[OutParam],
-    database: AnyStr = ...,
-    transaction: Optional[AnyStr] = ...,
-    params: Optional[List[InParam]] = ...,
-) -> DictIntStringAny: ...
 def get_return_value(
     stored_procedure: AnyStr,
     return_type_code: int,
