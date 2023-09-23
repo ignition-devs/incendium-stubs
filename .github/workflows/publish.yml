@@ -6,7 +6,12 @@ on:
       - published
 
 jobs:
-  publish:
+  tox:
+    uses: coatl-dev/workflows/.github/workflows/tox.yml@v7
+
+  pypi-publish:
+    needs:
+      - tox
     uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v7
     secrets:
       password: ${{ secrets.PYPI_API_TOKEN }}
