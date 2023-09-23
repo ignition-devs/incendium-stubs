@@ -6,9 +6,12 @@ on:
       - published
 
 jobs:
-  publish:
-    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v3.0.0
-    with:
-      python-version: "3.10"
+  tox:
+    uses: coatl-dev/workflows/.github/workflows/tox.yml@v7
+
+  pypi-publish:
+    needs:
+      - tox
+    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v7
     secrets:
-      pypi-token: ${{ secrets.PYPI_API_TOKEN }}
+      password: ${{ secrets.PYPI_API_TOKEN }}
