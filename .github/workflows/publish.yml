@@ -7,11 +7,16 @@ on:
 
 jobs:
   tox:
-    uses: coatl-dev/workflows/.github/workflows/tox.yml@v1
+    uses: coatl-dev/workflows/.github/workflows/tox.yml@coatl
 
   pypi-publish:
     needs:
       - tox
-    uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v1
-    secrets:
-      password: ${{ secrets.PYPI_API_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: coatl-dev/actions/pypi-upload@coatl
+        with:
+          python-version: '3.11'
+          password: ${{ secrets.PYPI_API_TOKEN }}
