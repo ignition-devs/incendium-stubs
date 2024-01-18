@@ -7,7 +7,7 @@
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-incendium/stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-incendium/stubs/main)
 [![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-incendium/incendium/discussions)
 
-This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`thecesrom/incendium`](https://github.com/ignition-incendium/incendium). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
+This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`ignition-incendium/incendium`](https://github.com/ignition-incendium/incendium). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
 
 ## Installation and usage
 
