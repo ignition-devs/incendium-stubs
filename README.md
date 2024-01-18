@@ -2,12 +2,12 @@
 
 <!--- Badges --->
 ![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/thecesrom/incendium-stubs/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/thecesrom/incendium-stubs)](https://github.com/thecesrom/incendium-stubs/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/thecesrom/incendium-stubs)](https://github.com/ignition-incendium/incendium-stubs/graphs/contributors)
 [![Downloads](https://pepy.tech/badge/incendium-stubs)](https://pepy.tech/project/incendium-stubs)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/thecesrom/incendium-stubs/main.svg)](https://results.pre-commit.ci/latest/github/thecesrom/incendium-stubs/main)
-[![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/thecesrom/incendium/discussions)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-incendium/stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-incendium/stubs/main)
+[![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-incendium/incendium/discussions)
 
-This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`thecesrom/incendium`](https://github.com/thecesrom/incendium). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
+This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`thecesrom/incendium`](https://github.com/ignition-incendium/incendium). These files were generated using `mypy`'s [`stubgen`](https://mypy.readthedocs.io/en/stable/stubgen.html).
 
 ## Installation and usage
 
@@ -31,21 +31,21 @@ mypy code.py
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/thecesrom/incendium/blob/code/CONTRIBUTING.md#contributing-to-incendium).
+See [CONTRIBUTING.md](https://github.com/ignition-incendium/incendium/blob/code/CONTRIBUTING.md#contributing-to-incendium).
 
 ## Discussions
 
-Feel free to post your questions and/or ideas at [Discussions](https://github.com/thecesrom/icendium/discussions).
+Feel free to post your questions and/or ideas at [Discussions](https://github.com/ignition-incendium/icendium/discussions).
 
 ## Contributors
 
 Thanks to everyone who has contributed to this project.
 
-Up-to-date list of contributors can be found [here](https://github.com/thecesrom/incendium-stubs/graphs/contributors).
+Up-to-date list of contributors can be found [here](https://github.com/ignition-incendium/incendium-stubs/graphs/contributors).
 
 ## License
 
-See the [LICENSE](https://github.com/thecesrom/incendium-stubs/blob/HEAD/LICENSE).
+See the [LICENSE](https://github.com/ignition-incendium/incendium-stubs/blob/HEAD/LICENSE).
 
 ## Code of conduct
 
