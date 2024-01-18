@@ -31,7 +31,7 @@ mypy code.py
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/ignition-incendium/incendium/blob/code/CONTRIBUTING.md#contributing-to-incendium).
+See [CONTRIBUTING.md](https://github.com/ignition-incendium/incendium/blob/HEAD/CONTRIBUTING.md#contributing-to-incendium).
 
 ## Discussions
 
