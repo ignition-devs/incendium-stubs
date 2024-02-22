@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "incendium-stubs"
-version = "2023.4.0.post1"
+version = "2023.4.0.post2"
 description = "incendium stubs package"
 readme = "README.md"
 keywords = [
