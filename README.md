@@ -1,8 +1,8 @@
 # incendium-stubs
 
 <!--- Badges --->
-![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/thecesrom/incendium-stubs/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/thecesrom/incendium-stubs)](https://github.com/ignition-incendium/incendium-stubs/graphs/contributors)
+![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/cesarcoatl/incendium-stubs/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/cesarcoatl/incendium-stubs)](https://github.com/ignition-incendium/incendium-stubs/graphs/contributors)
 [![Downloads](https://pepy.tech/badge/incendium-stubs)](https://pepy.tech/project/incendium-stubs)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-incendium/stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-incendium/stubs/main)
 [![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-incendium/incendium/discussions)

@@ -17,9 +17,18 @@ CURSOR_E_RESIZE: int
 CURSOR_HAND: int
 CURSOR_MOVE: int
 
-def authentication(auth_profile: AnyStr = ..., title: AnyStr = ...) -> bool: ...
+def authentication(
+    auth_profile: AnyStr = ...,
+    title: AnyStr = ...,
+    username_label_text: AnyStr = ...,
+    password_label_text: AnyStr = ...,
+) -> bool: ...
 def authorization(
-    role: AnyStr, auth_profile: AnyStr = ..., title: AnyStr = ...
+    role: AnyStr,
+    auth_profile: AnyStr = ...,
+    title: AnyStr = ...,
+    username_label_text: AnyStr = ...,
+    password_label_text: AnyStr = ...,
 ) -> bool: ...
 def confirm(
     message: AnyStr, title: AnyStr = ..., show_cancel: bool = ...
