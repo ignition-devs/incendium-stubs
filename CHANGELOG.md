@@ -1,3 +1,21 @@
+## v2024.5.0 (2024-05-01)
+
+### BREAKING CHANGE
+
+- deprecate incendium.util module
+
+### Refactor
+
+- **util**: move out of util (#81)
+
+## v2023.4.0.post2 (2024-02-22)
+
+## v2023.4.0.post1 (2023-09-23)
+
+### Feat
+
+- **pip**: python 3.11 (#56)
+
 ## v2023.4.0.post2 (2024-02-22)
 
 ## v2023.4.0.post1 (2023-09-23)
