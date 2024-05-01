@@ -16,7 +16,7 @@ keywords = [
   "scada",
 ]
 license = {file = "LICENSE"}
-authors = [{name = "César Román", email = "cesar@thecesrom.dev"}]
+authors = [{name = "César Román", email = "cesar@coatl.dev"}]
 requires-python = ">=3.7, <3.13"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -42,10 +42,9 @@ dependencies = [
   "ignition-api-stubs>=8.1",
 ]
 [project.urls]
-Funding = "https://github.com/sponsors/thecesrom"
-Homepage = "https://thecesrom.dev/incendium-stubs"
-Source = "https://github.com/thecesrom/incendium-stubs"
-Tracker = "https://github.com/thecesrom/incendium-stubs/issues"
+Funding = "https://github.com/sponsors/cesarcoatl"
+Source = "https://github.com/ignition-incendium/incendium-stubs"
+Tracker = "https://github.com/ignition-incendium/incendium-stubs/issues"
 
 [tool.setuptools]
 include-package-data = true
