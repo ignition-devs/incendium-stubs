@@ -4,9 +4,9 @@
 #
 #    pip-compile --generate-hashes pyproject.toml
 #
-ignition-api-stubs==8.1.39.post1 \
-    --hash=sha256:8eb99999931c8a5f16230f1a8542728796257b1c0390e05df6c08ad61e2c1ea4 \
-    --hash=sha256:a5ba2904b54805e8e3016344fd99f2d188e75f7e8e28d23207a350add2ee81f0
+ignition-api-stubs==8.1.41 \
+    --hash=sha256:2e80ef0796dee4f718dd2a10faa2ffdb6e5a1be2f51669e5d5543fd82ef57a81 \
+    --hash=sha256:509646ae7e4f9699457984bda06ca31e69e86e891a598764c19b29d1cd1282e8
     # via incendium-stubs (pyproject.toml)
 mypy[python2]==0.971 \
     --hash=sha256:02ef476f6dcb86e6f502ae39a16b93285fef97e7f1ff22932b657d1ef1f28655 \
@@ -84,7 +84,7 @@ types-enum34==1.1.8 \
     --hash=sha256:05058c7a495f6bfaaca0be4aeac3cce5cdd80a2bad2aab01fd49a20bf4a0209d \
     --hash=sha256:6f9c769641d06d73a55e11c14d38ac76fcd37eb545ce79cebb6eec9d50a64110
     # via ignition-api-stubs
-typing-extensions==4.11.0 \
-    --hash=sha256:83f085bd5ca59c80295fc2a82ab5dac679cbe02b9f33f7d83af68e241bea51b0 \
-    --hash=sha256:c1f94d72897edaf4ce775bb7558d5b79d8126906a14ea5ed1635921406c0387a
+typing-extensions==4.12.2 \
+    --hash=sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d \
+    --hash=sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8
     # via mypy
