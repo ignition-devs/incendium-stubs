@@ -14,4 +14,4 @@ jobs:
       - tox
     uses: coatl-dev/workflows/.github/workflows/pypi-upload.yml@v3
     secrets:
-      password: ${{ secrets.PYPI_API_TOKEN_STUBS }}
+      password: ${{ secrets.PYPI_API_TOKEN_INCENDIUM_STUBS }}
