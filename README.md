@@ -1,13 +1,11 @@
 # incendium-stubs
 
 <!--- Badges --->
-![GitHub last commit (stubs)](https://img.shields.io/github/last-commit/cesarcoatl/incendium-stubs/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/cesarcoatl/incendium-stubs)](https://github.com/ignition-incendium/incendium-stubs/graphs/contributors)
 [![Downloads](https://pepy.tech/badge/incendium-stubs)](https://pepy.tech/project/incendium-stubs)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-incendium/stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-incendium/stubs/main)
-[![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-incendium/incendium/discussions)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ignition-devs/incendium-stubs/main.svg)](https://results.pre-commit.ci/latest/github/ignition-devs/incendium-stubs/main)
+[![Join us on GitHub discussions](https://img.shields.io/badge/github-discussions-informational)](https://github.com/ignition-devs/discussions/discussions)
 
-This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`ignition-incendium/incendium`](https://github.com/ignition-incendium/incendium). These files were generated using `mypy`'s [`stubgen`](https://coatl-mypy.readthedocs.io/en/v0.971/stubgen.html).
+This package contains a collection of [stubs](https://www.python.org/dev/peps/pep-484/) for [`incendium`](https://github.com/ignition-devs/incendium). These files were generated using `mypy`'s [`stubgen`](https://coatl-mypy.readthedocs.io/en/v0.971/stubgen.html).
 
 ## Installation and usage
 
@@ -31,22 +29,22 @@ mypy code.py
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/ignition-incendium/incendium/blob/HEAD/CONTRIBUTING.md#contributing-to-incendium).
+See [CONTRIBUTING.md](https://github.com/ignition-devs/incendium/blob/HEAD/CONTRIBUTING.md#contributing-to-incendium).
 
 ## Discussions
 
-Feel free to post your questions and/or ideas at [Discussions](https://github.com/ignition-incendium/icendium/discussions).
+Feel free to post your questions and/or ideas at [Discussions](https://github.com/ignition-devs/discussions/discussions).
 
 ## Contributors
 
 Thanks to everyone who has contributed to this project.
 
-Up-to-date list of contributors can be found [here](https://github.com/ignition-incendium/incendium-stubs/graphs/contributors).
+Up-to-date list of contributors can be found [here](https://github.com/ignition-devs/incendium-stubs/graphs/contributors).
 
 ## License
 
-See the [LICENSE](https://github.com/ignition-incendium/incendium-stubs/blob/HEAD/LICENSE).
+See the [LICENSE](./LICENSE).
 
 ## Code of conduct
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+See [CODE_OF_CONDUCT.md](https://github.com/ignition-devs/incendium/blob/HEAD/CODE_OF_CONDUCT.md).
