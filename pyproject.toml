@@ -15,9 +15,9 @@ keywords = [
   "inductive automation",
   "scada",
 ]
-license = {file = "LICENSE"}
-authors = [{name = "César Román", email = "cesar@coatl.dev"}]
-requires-python = ">=3.7, <3.13"
+license = { file = "LICENSE" }
+authors = [ { name = "César Román", email = "cesar@coatl.dev" } ]
+requires-python = ">=3.7,<3.13"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
@@ -41,14 +41,13 @@ classifiers = [
 dependencies = [
   "ignition-api-stubs>=8.1",
 ]
-[project.urls]
-Funding = "https://github.com/sponsors/cesarcoatl"
-Source = "https://github.com/ignition-incendium/incendium-stubs"
-Tracker = "https://github.com/ignition-incendium/incendium-stubs/issues"
+urls.Funding = "https://github.com/sponsors/cesarcoatl"
+urls.Source = "https://github.com/ignition-devs/incendium-stubs"
+urls.Tracker = "https://github.com/ignition-devs/incendium-stubs/issues"
 
 [tool.setuptools]
 include-package-data = true
-package-dir = {"" = "stubs"}
+package-dir = { "" = "stubs" }
 
 [tool.setuptools.package-data]
-"*" = ["*.pyi", "py.typed"]
+"*" = [ "*.pyi", "py.typed" ]
