@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - stubs
+      - .github/workflows/pr-build.yml
+      - 'stubs/**'
       - pyproject.toml
       - requirements.txt
       - tox.ini
@@ -14,4 +15,4 @@ jobs:
   test:
     uses: coatl-dev/workflows/.github/workflows/tox-gh.yml@v4
     with:
-      python-versions: '["3.7", "3.8", "3.9", "3.10", "3.11", "3.12"]'
+      python-versions: '["3.9", "3.10", "3.11", "3.12"]'
