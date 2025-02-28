@@ -4,9 +4,9 @@
 #
 #    pip-compile --generate-hashes pyproject.toml
 #
-ignition-api-stubs==8.1.45.post1 \
-    --hash=sha256:46dd633508d2b3808a32b0cacbc8487fb2aa0fb8ba7e4f1f434a4ff35c0a8d59 \
-    --hash=sha256:b9e7a67fde44549663ccf58a846270c830627bdfab4f53cbb1d1b6e14c0c7f52
+ignition-api-stubs==8.1.45.post2 \
+    --hash=sha256:7474f827f7209c8ca7dd1b86a55ea8ffa23e7beae4d8ac67cfc2c01fb4d6d816 \
+    --hash=sha256:9600324da403cb987149cb6550e32b5118afd9d3673e968a010bf207bed528ed
     # via incendium-stubs (pyproject.toml)
 mypy[python2]==0.971 \
     --hash=sha256:02ef476f6dcb86e6f502ae39a16b93285fef97e7f1ff22932b657d1ef1f28655 \
