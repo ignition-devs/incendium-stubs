@@ -31,16 +31,10 @@ jobs:
         run: |
           uv python install ${{ inputs.python-versions }}
 
-      - name: Create uv virtual environments
-        run: |
-          for v in ${{ inputs.python-versions }}; do
-            uv venv $v
-          done
-
       - name: List Python versions
         run: |
           uv python list
 
       - name: Install dependencies
         run: |
-          uvx --with tox-uv tox
+          uvx --with tox-uv tox -- --parallel
