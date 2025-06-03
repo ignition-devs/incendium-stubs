@@ -33,4 +33,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          uvx tox --with tox-uv
+          uv tool install tox --with tox-uv
+
+      - name: Run tox
+        run: |
+          tox
