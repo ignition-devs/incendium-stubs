@@ -16,9 +16,6 @@ jobs:
   tox:
     name: tox-uv
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ${{ fromJSON(inputs.python-versions) }}
 
     steps:
       - name: Checkout repo
@@ -27,16 +24,13 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ inputs.uv-version }}
-          python-version: ${{ matrix.python-version }}
           cache-dependency-glob: |
             tox.ini
 
+      - name: Install Python versions
+        run: |
+          uv python install ${{ inputs.python-versions }}
+
       - name: Install dependencies
         run: |
-          uv tool install tox --with tox-uv
-        env:
-          UV_PYTHON: ${{ matrix.python-version }}
-
-      - name: Run tox
-        run: |
-          tox
+          uvx tox --with tox-uv
