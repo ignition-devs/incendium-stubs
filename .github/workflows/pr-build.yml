@@ -14,3 +14,6 @@ on:
 jobs:
   test:
     uses: ./.github/workflows/tox-uv.yml
+    with:
+      uv-version: 'latest'
+      python-versions: '["3.9", "3.10", "3.11", "3.12"]'

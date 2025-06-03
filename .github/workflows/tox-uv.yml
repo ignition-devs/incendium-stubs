@@ -7,16 +7,18 @@ on:
         required: false
         type: string
         default: 'latest'
-      python-version:
-        description: Version of Python to use.
-        required: false
+      python-versions:
+        description: A list of Python versions.
+        required: true
         type: string
-        default: '3.13'
 
 jobs:
   tox:
     name: tox-uv
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ${{ fromJSON(inputs.python-versions) }}
 
     steps:
       - name: Checkout repo
@@ -32,7 +34,7 @@ jobs:
         run: |
           uv tool install tox --with tox-uv
         env:
-          UV_PYTHON: ${{ inputs.python-version }}
+          UV_PYTHON: ${{ matrix.python-version }}
 
       - name: Run tox
         run: |
