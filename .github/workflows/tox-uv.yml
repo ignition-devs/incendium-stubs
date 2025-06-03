@@ -27,6 +27,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ inputs.uv-version }}
+          python-version: ${{ matrix.python-version }}
           cache-dependency-glob: |
             tox.ini
 
