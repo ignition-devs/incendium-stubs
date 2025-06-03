@@ -1,0 +1,39 @@
+on:
+  workflow_call:
+    inputs:
+      uv-version:
+        description: >-
+          The version of uv to install.
+        required: false
+        type: string
+        default: 'latest'
+      python-version:
+        description: Version of Python to use.
+        required: false
+        type: string
+        default: '3.13'
+
+jobs:
+  tox:
+    name: tox-uv
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: ${{ inputs.uv-version }}
+          cache-dependency-glob: |
+            tox.ini
+
+      - name: Install dependencies
+        run: |
+          uv tool install tox --with tox-uv
+        env:
+          UV_PYTHON: ${{ inputs.python-version }}
+
+      - name: Run tox
+        run: |
+          tox
