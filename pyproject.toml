@@ -15,22 +15,19 @@ keywords = [
   "inductive automation",
   "scada",
 ]
-license = { file = "LICENSE" }
+license = "MIT"
 authors = [ { name = "César Román", email = "cesar@coatl.dev" } ]
-requires-python = ">=3.7,<3.13"
+requires-python = ">=3.9,<3.13"
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
   "Intended Audience :: Information Technology",
   "Intended Audience :: Manufacturing",
-  "License :: OSI Approved :: MIT License",
   "Operating System :: MacOS :: MacOS X",
   "Operating System :: Microsoft :: Windows",
   "Operating System :: POSIX :: Linux",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
