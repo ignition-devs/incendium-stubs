@@ -40,16 +40,10 @@ class InParam(Param):
 class OutParam(Param):
     def __init__(self, name_or_index: Union[int, AnyStr], type_code: int) -> None: ...
 
-def get_output_params(
-    stored_procedure: AnyStr,
-    output: List[OutParam],
-    database: AnyStr = ...,
-    transaction: Optional[AnyStr] = ...,
-    params: Optional[List[InParam]] = ...,
-) -> DictIntStringAny: ...
 def check(
     stored_procedure: AnyStr,
     database: AnyStr = ...,
+    transaction: Optional[AnyStr] = ...,
     params: Optional[List[InParam]] = ...,
 ) -> Optional[bool]: ...
 def execute_non_query(
@@ -61,8 +55,16 @@ def execute_non_query(
 def get_data(
     stored_procedure: AnyStr,
     database: AnyStr = ...,
+    transaction: Optional[AnyStr] = ...,
     params: Optional[List[InParam]] = ...,
 ) -> BasicDataset: ...
+def get_output_params(
+    stored_procedure: AnyStr,
+    output: List[OutParam],
+    database: AnyStr = ...,
+    transaction: Optional[AnyStr] = ...,
+    params: Optional[List[InParam]] = ...,
+) -> DictIntStringAny: ...
 def get_return_value(
     stored_procedure: AnyStr,
     return_type_code: int,
@@ -81,5 +83,6 @@ def o_get_data(
     stored_procedure: AnyStr,
     out_params: List[OutParam],
     database: AnyStr = ...,
+    transaction: Optional[AnyStr] = ...,
     in_params: Optional[List[InParam]] = ...,
 ) -> Tuple[BasicDataset, DictIntStringAny]: ...
